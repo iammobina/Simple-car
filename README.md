@@ -17,7 +17,7 @@ The P button turns off the lights and mutes the beep when it is released.
 
 7) The wheelbase is connected to the car and behind the car (like most car games)
 
-Create a tunnel in the game, and when the car enters it, the car light will automatically turn on, and when the car leaves it, the light will go off.
+8) Create a tunnel in the game, and when the car enters it, the car light will automatically turn on, and when the car leaves it, the light will go off.
 
 ## Language
 The project is written in C#(Unity).
