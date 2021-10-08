@@ -1,0 +1,227 @@
+
+      (function(){
+
+        var log = function (payload) {
+          var x = new XMLHttpRequest();
+          x.open('POST', 'https://e.spoutable.com/e');
+          x.setRequestHeader('Content-Type', 'text/plain');
+          x.send(JSON.stringify(payload));
+        };
+
+        log({"e":100,"v":3,"b":2,"ct":"2020-11-04T14:12:33.678Z","objectType":"page","action":"payload landed","i0":"-MLIaXBDEqwbojdYTc0F","i1":"-MLIaX9qeGuhSt1bCak0","i2":"-MLIaPmt2HRK91zSIbuC","sid":"df712acc-3222-4738-b9c0-f4607a4073c7"});
+
+        var d=document,
+            c={i:{"distilEnabled":false,"mobileEnabled":true,"bidRatio":null,"consumableAdjustment":null,"desktopEnabled":true,"name":"Photos Public Domain","spoutableAdzerkSiteId":1038814,"spoutableSiteId":"df712acc-3222-4738-b9c0-f4607a4073c7","siteUUID":"df712acc-3222-4738-b9c0-f4607a4073c7","publisherId":8391,"adzerkAPIURL":"//engine.adzerk.net/api/v2","networkId":9637,"isActive":true,"adminIsActive":true,"adminIsApproved":true,"branch":"master","path":"df712acc-3222-4738-b9c0-f4607a4073c7/spoutable.js","runningRecycledContent":false,"appnexusDeals":[],"configRevision":897},
+               t:{"sessionId":"-MLIaPmt2HRK91zSIbuC","pageCount":1,"strategyId":1106367,"bundleId":613969},
+               p:{"cdnHost":"//cdn2.spoutable.com","sentryHost":"https://e289928358464050a005778499572066@app.getsentry.com/63517","spoutTrackHost":"//t.spoutable.com","spoutEventHost":"//e.spoutable.com","distilDomain":"bender.spoutable.com"},
+               v:{"userId":"ckh3hdad2syupaaqwbg7iq9rl","clientIp":"37.98.46.210","isMobile":false,"secure":true,"facebookApp":false,"pageImpressionId":"-MLIaX9qeGuhSt1bCak0","pageURL":"https://www.photos-public-domain.com/2012/05/18/green-brick-wall-texture-2/","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36","language":"en-US,en;q=0.9","userPromise":{},"countryCode":"IR","latitude":35.6961,"longitude":51.4231,"isGDPRCountry":false},
+               o:{},
+               n:1604499153678,
+               m:Date.now()
+            },
+            b=function(){
+              var f=d.createElement('iframe'),
+                  s=f.style;
+              f.allowtransparency='true';
+              f.scrolling='no';
+              s.position='absolute';
+              s.height=s.width='1px';
+              s.top=s.left='-9999px';
+              return f;
+            },
+            a=function(u){
+              var f=b();
+              f.id=u.unit.frameId;
+              d.body.appendChild(f);
+              var w=f.contentWindow,
+                  e=w.document;
+              e.open();
+              e.close();
+              w.c=c;
+              w.u=u;
+
+              w.onerror = function(msg, url, line, col) {
+                var payload = {"e":100,"v":3,"b":2,"ct":"2020-11-04T14:12:33.678Z","objectType":"page","action":"friendly window onerror","i0":"-MLIaXBDEqwbojdYTc0G","i1":"-MLIaX9qeGuhSt1bCak0","i2":"-MLIaPmt2HRK91zSIbuC","sid":"df712acc-3222-4738-b9c0-f4607a4073c7"};
+                payload.memo = msg.message || msg;
+                log(payload);
+              }
+
+              var script = e.createElement('script');
+              script.type = 'text/javascript';
+              script.charset = 'UTF-8';
+              script.onerror = function(err) {
+                var payload = {"e":100,"v":3,"b":2,"ct":"2020-11-04T14:12:33.678Z","objectType":"page","action":"unit script onerror","i0":"-MLIaXBDEqwbojdYTc0H","i1":"-MLIaX9qeGuhSt1bCak0","i2":"-MLIaPmt2HRK91zSIbuC","sid":"df712acc-3222-4738-b9c0-f4607a4073c7"};
+                payload.memo = (err.srcElement || err.target || {}).src;
+                log(payload);
+              }
+              e.head.appendChild(script);
+              script.src = 'https://s.spoutable.com/units/'+c.i.branch+'/'+u.unit.fileName;
+            },
+            r=function(src) { (new Image).src = src; },
+            s=function(src){
+              var f=b();
+              f.src=src;
+              d.body.appendChild(f);
+            };
+
+            sessionStorage.setItem('spoutable-'+c.i.siteUUID, JSON.stringify(c.t));
+    a({
+  "unit": {
+    "frameId": "spout-unit-1",
+    "zoneId": 3294025,
+    "unitConfigId": 253,
+    "className": "TwoByFour",
+    "fileName": "two-by-four.js",
+    "unitName": "two-by-four",
+    "mobileMinAdCount": 2,
+    "minAdCount": 3,
+    "desiredAdCount": 8,
+    "isBar": false,
+    "unitTitle": "CHECK OUT MORE &mdash;",
+    "customFontName": "",
+    "customCSS": "",
+    "components": {
+      "adLayout": "adGrid"
+    },
+    "unitMode": "",
+    "emailCaptureInfo": {},
+    "unitTriggersOnTime": true,
+    "unitTriggerTime": 30,
+    "unitTriggersOnExit": true,
+    "unitPlacement": "overlay",
+    "partnerPriority": [
+      "contentad"
+    ],
+    "zemantaIabCategories": [
+      "IAB1",
+      "IAB19",
+      "IAB20",
+      "IAB18"
+    ],
+    "zemantaMinCpc": 0.1,
+    "zemantaAdCount": 3,
+    "mgidAdCount": 8,
+    "mgidMinCpc": 0.01,
+    "mgidMinCpcMobile": 0.01,
+    "adzerkNetworkId": 9637,
+    "recycledContentCount": 3,
+    "staticDisplayAdPartnerId": 13,
+    "staticDisplayAds": [],
+    "explicitLayoutAdIds": [],
+    "adzerkAdCount": 8,
+    "revcontentWidgetId": "92443",
+    "revcontentBottomBarWidgetId": "92444",
+    "revcontentTopBarWidgetId": "92445",
+    "revcontentAdCount": 8,
+    "unitCfgName": "two-by-four/EI",
+    "unitRegionId": 1,
+    "triggers": [
+      {
+        "cookieExpires": 900,
+        "id": 484329,
+        "event": "inactivity"
+      },
+      {
+        "cookieExpires": 900,
+        "id": 484328,
+        "event": "return"
+      },
+      {
+        "cookieExpires": 900,
+        "id": 484327,
+        "event": "postitial"
+      },
+      {
+        "cookieExpires": 900,
+        "id": 396,
+        "event": "exit"
+      }
+    ],
+    "revcontentAccount": "proper",
+    "revcontentDomain": "lifestyle.spoutable.com",
+    "contentadWidgetId": "7b5b1cca-6957-4c90-9a40-04137d9f066b",
+    "contentadDomainId": "cGhvdG9zLXB1YmxpYy1kb21haW4uc3BvdXRhYmxlLmNvbQ==",
+    "contentadDomain": "http://photos-public-domain.spoutable.com",
+    "allowCriteoInOverlay": true,
+    "criteoAdCount": 2,
+    "bidtellectMinCpc": 0.1,
+    "bidtellectMinCpcMobile": 0.05,
+    "zemantaMinCpcMobile": 0.05
+  },
+  "unitImpressionId": "-MLIaX9s12plwAKx1Tws",
+  "ads": [
+    {
+      "slot": 1,
+      "title": "'It Just Goes Kablooie' – Boy Describes First Kiss in Funny Video",
+      "summary": "Learn more",
+      "url": "https://api.content.ad/Lib/TrackOutboundClick.aspx?hid=-1&wid=633353&uid=2389527&did=325403&type=3&s=ip-172-18-2-31.ec2.internal&c=IR&d=&aid=8DB38BA3-CF48-42E6-8AFD-457A1EFC7626&ik=2020110406_e079f09e8c5276843d5d8bcf132da96e&it=2020-11-04+06%3A12%3A33.635&hai=60664&campaignId=134154&advertiserId=7535&guid=7b5b1cca-6957-4c90-9a40-04137d9f066b&ck=ed96c3a953ffb0f3b3900b87e463acd2&clientId=e%3AnqfV8PZ%2BX6qz1%2BWV2wBb%2F8RIiNseJmuY9EgLFuCmDs7Qte%2BIYboJVAV3jCH3wWBH&clientId2=e%3ACR84xZ3NzvOYLl7heF1prQ%3D%3D&adi=backfill&t=false&ct=api&user=e%3AMZJA25d9G07wODo4t%2FZ8Cn3HpF9f7ubWdyGnhx6xcRlqV2tetbyfAIRtGAjf3sTG9OqcXf3izpQrXRYQVfYD0ORAdwldGwySZiWbI28g2Q8%3D&pan=r76du%2FAaAJ7rtdPdUX0s6A%3D%3D&cpc=F1kajOTgIprOTOZxOiNXXQ%3D%3D&oc=1CtvQduXUvkf%2Fj5ezglzMw%3D%3D&redirectUrl=Fs5hfcm8y%2BK86uQxMUBEa%2BnEYnVpzvYHV6DFPry6c3czgW1hWn1m7Vv8Jhr8TWVf8H9E9%2FftC4HYOgaWghiHQW%2FG5iE10hwnUlP27puqZ1n5G%2Fv3SOSsj5L0d3gHPQJQuFU5DweMUUcJsiupcPDOjDhJfjWDkcTDzLLIlDcNRNo%3D",
+      "image": "https://d3dytsf4vrjn5x.cloudfront.net/134154/300x250/66e917c31c89b87580a5fa367c48a0a6.jpg",
+      "sponsored": true,
+      "sponsored_by": "funnelwide.com",
+      "cpc": 0,
+      "score": 0,
+      "category_tags": null,
+      "exclude_tags": null,
+      "partner": "contentad",
+      "partnerId": 26,
+      "priority": 0.030121,
+      "cpm": 0.030121,
+      "suborder": 1
+    },
+    {
+      "slot": 2,
+      "title": "The 6 Most Evil Stepmothers to Exist in Real Life",
+      "summary": "Learn more",
+      "url": "https://api.content.ad/Lib/TrackOutboundClick.aspx?hid=-1&wid=633353&uid=2389520&did=325403&type=3&s=ip-172-18-2-31.ec2.internal&c=IR&d=&aid=8DB38BA3-CF48-42E6-8AFD-457A1EFC7626&ik=2020110406_e079f09e8c5276843d5d8bcf132da96e&it=2020-11-04+06%3A12%3A33.635&hai=60664&campaignId=134154&advertiserId=7535&guid=7b5b1cca-6957-4c90-9a40-04137d9f066b&ck=05d1f6598cd30f2906a06addf121b0e3&clientId=e%3AnqfV8PZ%2BX6qz1%2BWV2wBb%2F8RIiNseJmuY9EgLFuCmDs7Qte%2BIYboJVAV3jCH3wWBH&clientId2=e%3ACR84xZ3NzvOYLl7heF1prQ%3D%3D&adi=backfill&t=false&ct=api&user=e%3AMZJA25d9G07wODo4t%2FZ8Cn3HpF9f7ubWdyGnhx6xcRlqV2tetbyfAIRtGAjf3sTG9OqcXf3izpQrXRYQVfYD0ORAdwldGwySZiWbI28g2Q8%3D&pan=r76du%2FAaAJ7rtdPdUX0s6A%3D%3D&cpc=F1kajOTgIprOTOZxOiNXXQ%3D%3D&oc=1CtvQduXUvkf%2Fj5ezglzMw%3D%3D&redirectUrl=Fs5hfcm8y%2BK86uQxMUBEa%2FC3ej6%2BOH9Dh5emXaCBhYg9whJyJ9%2BQ%2BdOPvSlv%2B%2FXyOpf0wQRjSe4cCAB8QNVyNkSn5gZBC7Xr5Jc%2B5ekdJkvV13IXPVkoxNacldXY0%2FjQYYsNXql8Z9%2FvjByaPOJ%2BYvk7PCcCvErg78LX%2F5vWHQd1EFtpcctyoK%2Fw0p3k2lMc",
+      "image": "https://d3dytsf4vrjn5x.cloudfront.net/134154/300x250/7d3c32d76b351df0992320a3afd6b0e8.jpg",
+      "sponsored": true,
+      "sponsored_by": "funnelwide.com",
+      "cpc": 0,
+      "score": 0,
+      "category_tags": null,
+      "exclude_tags": null,
+      "partner": "contentad",
+      "partnerId": 26,
+      "priority": 0.030121,
+      "cpm": 0.030121,
+      "suborder": 2
+    },
+    {
+      "slot": 3,
+      "title": "20 Best Deleted Meghan Markle Instagram Photos",
+      "summary": "Learn more",
+      "url": "https://api.content.ad/Lib/TrackOutboundClick.aspx?hid=-1&wid=633353&uid=2389522&did=325403&type=3&s=ip-172-18-2-31.ec2.internal&c=IR&d=&aid=8DB38BA3-CF48-42E6-8AFD-457A1EFC7626&ik=2020110406_e079f09e8c5276843d5d8bcf132da96e&it=2020-11-04+06%3A12%3A33.635&hai=60664&campaignId=134154&advertiserId=7535&guid=7b5b1cca-6957-4c90-9a40-04137d9f066b&ck=f5e5e32608c75e9a8e5a4abab12d79a2&clientId=e%3AnqfV8PZ%2BX6qz1%2BWV2wBb%2F8RIiNseJmuY9EgLFuCmDs7Qte%2BIYboJVAV3jCH3wWBH&clientId2=e%3ACR84xZ3NzvOYLl7heF1prQ%3D%3D&adi=backfill&t=false&ct=api&user=e%3AMZJA25d9G07wODo4t%2FZ8Cn3HpF9f7ubWdyGnhx6xcRlqV2tetbyfAIRtGAjf3sTG9OqcXf3izpQrXRYQVfYD0ORAdwldGwySZiWbI28g2Q8%3D&pan=r76du%2FAaAJ7rtdPdUX0s6A%3D%3D&cpc=F1kajOTgIprOTOZxOiNXXQ%3D%3D&oc=1CtvQduXUvkf%2Fj5ezglzMw%3D%3D&redirectUrl=Fs5hfcm8y%2BK86uQxMUBEazq4VdShcWQWQfnaZvEiUjIGBvQwXGV%2BI%2BQPEUlY7b2Z25LtsBcwSH%2FlKoGbMSNd5374N0oOKMxp%2BkkR1QkcC5VgMxS5M4CydRifEVXCthLJnPY50qjS4Qx%2FZt0bVfSSizgJQ%2B%2BWcV8EAJXfmYAgxgkbiXW0i1NO1KyNK0BC1Py3",
+      "image": "https://d3dytsf4vrjn5x.cloudfront.net/134154/300x250/0a348cad437acd6b76eebe35ce3c71a5.jpg",
+      "sponsored": true,
+      "sponsored_by": "funnelwide.com",
+      "cpc": 0,
+      "score": 0,
+      "category_tags": null,
+      "exclude_tags": null,
+      "partner": "contentad",
+      "partnerId": 26,
+      "priority": 0.030121,
+      "cpm": 0.030121,
+      "suborder": 3
+    },
+    {
+      "slot": 4,
+      "title": "10 Kidnapped Kids Who Narrowly Escaped",
+      "summary": "Learn more",
+      "url": "https://api.content.ad/Lib/TrackOutboundClick.aspx?hid=-1&wid=633353&uid=2389519&did=325403&type=3&s=ip-172-18-2-31.ec2.internal&c=IR&d=&aid=8DB38BA3-CF48-42E6-8AFD-457A1EFC7626&ik=2020110406_e079f09e8c5276843d5d8bcf132da96e&it=2020-11-04+06%3A12%3A33.636&hai=60664&campaignId=134154&advertiserId=7535&guid=7b5b1cca-6957-4c90-9a40-04137d9f066b&ck=867815651fbb0769e34a71f4b81d155c&clientId=e%3AnqfV8PZ%2BX6qz1%2BWV2wBb%2F8RIiNseJmuY9EgLFuCmDs7Qte%2BIYboJVAV3jCH3wWBH&clientId2=e%3ACR84xZ3NzvOYLl7heF1prQ%3D%3D&adi=backfill&t=false&ct=api&user=e%3AMZJA25d9G07wODo4t%2FZ8Cn3HpF9f7ubWdyGnhx6xcRlqV2tetbyfAIRtGAjf3sTG9OqcXf3izpQrXRYQVfYD0ORAdwldGwySZiWbI28g2Q8%3D&pan=r76du%2FAaAJ7rtdPdUX0s6A%3D%3D&cpc=F1kajOTgIprOTOZxOiNXXQ%3D%3D&oc=1CtvQduXUvkf%2Fj5ezglzMw%3D%3D&redirectUrl=Fs5hfcm8y%2BK86uQxMUBEa%2F4RMp%2FKCh2QTPp77gP8wESJeix%2BYK4tw70vR%2FkzrURySHnSkV5umQfoVtiL3XCDFX7L0SziZrHe4O2PM7dAyIbxCwQaHI1T%2B430tRX29bw6RzE2AUUlQzCqa29tuoblwBFYNXr9kmY3u3WniNt5ulkUrilMD%2B6KWJ5b1gRMaj1i",
+      "image": "https://d3dytsf4vrjn5x.cloudfront.net/134154/300x250/9b363298424a4535aba5887494d913f7.jpg",
+      "sponsored": true,
+      "sponsored_by": "funnelwide.com",
+      "cpc": 0,
+      "score": 0,
+      "category_tags": null,
+      "exclude_tags": null,
+      "partner": "contentad",
+      "partnerId": 26,
+      "priority": 0.030121,
+      "cpm": 0.030121,
+      "suborder": 4
+    }
+  ],
+  "bid": 0
+});r("https://bttrack.com/pixel/cookiesync?source=56316c53-899d-4828-9363-057415faaf37&secure=1");r("https://b1sync.zemanta.com/usersync/spoutable/?puid=ckh3hdad2syupaaqwbg7iq9rl&cb=https%3A%2F%2Fs.spoutable.com%2Fsc%3Fp%3Dzemanta%26v%3D__ZUID__");r("https://secure.adnxs.com/getuid?https://s.spoutable.com/sc?p=appnexus&v=$UID");})()
