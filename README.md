@@ -1,4 +1,4 @@
-# Simple Car
+  # Simple Car
 
 The repository contains a very simple car game with the following conditions:
 
