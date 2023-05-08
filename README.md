@@ -1,5 +1,7 @@
   # Simple Car
 
+<img src="car.gif"></img> 
+
 The repository contains a very simple car game with the following conditions:
 
 1) The car is a rectangular cube.
